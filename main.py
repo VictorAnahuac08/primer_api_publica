@@ -10,3 +10,8 @@ def read_root():
 def predict(x: float):
     result = x * 2
     return {"input": x, "prediction": result}
+
+@app.get("/dividir/")
+def dividir(x:float):
+    result = x//2
+    return {"resultado": result}
